@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
                 className="p-2 rounded-full hover:bg-neutral-800"
                 href="https://github.com/Esteban-Montecinos/mntui"
                 target="_blank"
+                aria-label="source code on GitHub"
                 rel="noopener noreferrer"
               >
                 <IconBrandGithub />
