@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { IconBrandGithub } from "@tabler/icons-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
         <header className="sticky top-0 flex flex-row w-full border-b backdrop-blur-md border-neutral-700 ">
           <div className="flex flex-row items-center justify-between w-full p-2 m-auto max-w-7xl h-14">
             <nav className="flex flex-row items-center w-full gap-6">
-              <span className="text-3xl font-light">MntUI</span>
+              <Link className="text-3xl font-light" href="/">MntUI</Link>
               <Link className="font-medium text-neutral-400" href="/docs">
                 Docs
               </Link>
@@ -28,8 +29,13 @@ export default function RootLayout({ children }) {
               </Link>
             </nav>
             <div className="flex flex-row items-center justify-end w-full gap-2 ">
-              <Link href="https://github.com/Esteban-Montecinos" target="_blank" rel="noopener noreferrer">
-                GitHub
+              <Link
+                className="p-2 rounded-full hover:bg-neutral-800"
+                href="https://github.com/Esteban-Montecinos/mntui"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconBrandGithub />
               </Link>
             </div>
           </div>
@@ -38,7 +44,7 @@ export default function RootLayout({ children }) {
         <footer className="flex flex-row w-full border-t border-neutral-700">
           <div className="flex flex-row items-center w-full h-24 px-2 py-4 m-auto max-w-7xl">
             <p className="text-sm text-neutral-400">
-              Construido por{" "}
+              Built by{" "}
               <Link
                 href="https://github.com/Esteban-Montecinos"
                 className="font-medium underline"
@@ -47,9 +53,9 @@ export default function RootLayout({ children }) {
               >
                 Esteban-Montecinos
               </Link>
-              . El código fuente está disponible en{" "}
+              . The source code is available on{" "}
               <Link
-                href="https://github.com/Esteban-Montecinos"
+                href="https://github.com/Esteban-Montecinos/mntui"
                 className="font-medium underline"
                 target="_blank"
                 rel="noopener noreferrer"
