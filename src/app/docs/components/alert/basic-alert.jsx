@@ -4,10 +4,6 @@ export default function BasicAlert({
   IconExclamationCircle,
   IconInfoCircle,
 }) {
-  const code = `<div className="flex items-center w-full gap-4 px-4 py-2 text-red-100 rounded-md bg-red-950">
-    <IconExclamationCircle />
-    <p className="text-sm">This is an error alert — check it out!</p>
-</div>`;
   return (
     <div className="flex flex-col gap-2">
       <h2 className="text-xl font-semibold">Basic alerts</h2>
@@ -37,10 +33,16 @@ export default function BasicAlert({
           <p className="text-sm">This is an success alert — check it out!</p>
         </div>
       </div>
-      <div className="flex flex-col gap-2 p-6 border rounded-b-lg border-neutral-700">
-        <pre>
-          <code>{code}</code>
-        </pre>
+      <div className="flex flex-col gap-2 p-6 text-sm border rounded-b-lg border-neutral-700">
+        &lt;div className=&quot;flex items-center w-full gap-4 px-4 py-2
+        text-red-100 rounded-md bg-red-950&quot;&gt;
+        <br />
+        &nbsp;&nbsp;&lt;IconExclamationCircle /&gt;
+        <br />
+        &nbsp;&nbsp;&lt;p className=&quot;text-sm&quot;&gt;This is an error
+        alert — check it out!&lt;/p&gt;
+        <br />
+        &lt;/div&gt;
       </div>
     </div>
   );
