@@ -18,7 +18,7 @@ export default function ErrorPage() {
   return (
     <Form
       action={fetchData}
-      className="flex flex-col items-start max-w-3xl gap-2 p-4 m-auto bg-white rounded-lg"
+      className="flex flex-col items-start w-full max-w-lg gap-4 p-4 m-auto bg-white rounded-lg"
     >
       <label className="text-sm text-neutral-950" htmlFor="name">
         Name
@@ -30,7 +30,7 @@ export default function ErrorPage() {
         name="name"
         placeholder="rick"
       />
-      <button className="w-full p-2 rounded-md bg-neutral-950 text-neutral-200">
+      <button className="w-full p-2 text-sm rounded-md bg-neutral-950 text-neutral-200">
         Fetch Data
       </button>
     </Form>
