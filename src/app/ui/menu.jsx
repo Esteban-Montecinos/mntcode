@@ -26,7 +26,14 @@ export default function Menu() {
           className="lg:hidden"
         />
         <NavbarBrand>
-          <Link color="foreground" as={NextLink} href="/" className="font-bold text-inherit">MntUI</Link>
+          <Link
+            color="foreground"
+            as={NextLink}
+            href="/"
+            className="font-bold text-inherit"
+          >
+            MntUI
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
@@ -37,7 +44,13 @@ export default function Menu() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" as={NextLink} href="/docs/components/error-action">Components</Link>
+          <Link
+            color="foreground"
+            as={NextLink}
+            href="/docs/components/error-action"
+          >
+            Components
+          </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
@@ -55,10 +68,11 @@ export default function Menu() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
-        <NavbarMenuItem>
+        <NavbarMenuItem className="flex flex-col">
           <h4 className="text-lg font-semibold">Getting Started</h4>
           <Navigation navLinks={started} />
           <Link
+            className="w-full hover:underline"
             color="foreground"
             size="md"
             as={NextLink}
@@ -68,6 +82,7 @@ export default function Menu() {
             Next.js
           </Link>
           <Link
+            className="w-full hover:underline"
             color="foreground"
             size="md"
             as={NextLink}
