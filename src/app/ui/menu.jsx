@@ -1,7 +1,6 @@
 "use client";
 import {
   Navbar,
-  NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenuToggle,
@@ -25,7 +24,7 @@ export default function Menu() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="lg:hidden"
         />
-        <NavbarBrand>
+        <NavbarItem>
           <Link
             color="foreground"
             as={NextLink}
@@ -34,7 +33,7 @@ export default function Menu() {
           >
             MntUI
           </Link>
-        </NavbarBrand>
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="hidden gap-4 lg:flex" justify="start">
