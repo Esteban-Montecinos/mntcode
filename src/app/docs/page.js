@@ -4,7 +4,7 @@ export default function Introduction() {
       <div className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold">Introduction</h1>
         <p className="text-base text-neutral-400">
-          Re-usable components built using Tailwind CSS.
+          Re-usable components built using Next.js + Tailwind CSS.
         </p>
       </div>
       <p className="text-lg text-neutral-100">Pick the components you need.</p>

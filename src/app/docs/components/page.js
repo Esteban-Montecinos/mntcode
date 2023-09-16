@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
-export default function ComponentsPage() {
-    redirect("/docs/components/alert");
+export default function page() {
+  redirect('/docs/componets/error-action')
 }
