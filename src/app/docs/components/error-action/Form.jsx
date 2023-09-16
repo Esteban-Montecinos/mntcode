@@ -18,7 +18,7 @@ export default function Form({ action, children, ...props }) {
   return (
     <form action={formAction} {...props}>
       {!!error && (
-        <p className="w-full p-2 text-red-500 bg-red-200 rounded-md">{error}</p>
+        <p className="w-full p-2 text-sm text-red-500 bg-red-200 rounded-md">{error}</p>
       )}
       {!!data && (
         <img className="self-center w-24 h-24 rounded-full " src={data} alt="Character avatar"/>
