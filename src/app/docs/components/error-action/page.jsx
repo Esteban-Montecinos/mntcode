@@ -30,7 +30,7 @@ export default function page() {
           Displays a callout for user attention.
         </p>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-4">
         <ErrorPage />
         <Editor icon={<IconFileTypeJsx className="w-5 h-5" />} title="page.jsx">
           {errorActionPage}
