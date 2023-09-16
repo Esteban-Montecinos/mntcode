@@ -26,7 +26,7 @@ export default function Menu() {
           className="lg:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">MntUI</p>
+          <Link color="foreground" as={NextLink} href="/" className="font-bold text-inherit">MntUI</Link>
         </NavbarBrand>
       </NavbarContent>
 
