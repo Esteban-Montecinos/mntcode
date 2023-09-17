@@ -7,7 +7,7 @@ import {
 } from "@/app/constants-code";
 import { GetFileBySlug } from "@/app/ui/read-file";
 export const metadata = {
-  title: "Display error server action | MntUI - Next.js",
+  title: "Display error server action | MntCode - Next.js",
 };
 
 export default function page() {

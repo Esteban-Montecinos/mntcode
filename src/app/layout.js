@@ -7,7 +7,7 @@ import Menu from "./ui/menu";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "MntUI - Next.js",
+  title: "MntCode - Next.js",
   description: "Copy and paste components from MntUI to your project.",
 };
 
