@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "MntCode - Next.js",
-  description: "Copy and paste components from MntUI to your project.",
+  description: "Copy and paste components from MntCode to your project.",
 };
 
 export default function RootLayout({ children }) {
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
                 </Link>
                 . The source code is available on{" "}
                 <Link
-                  href="https://github.com/Esteban-Montecinos/mntui"
+                  href="https://github.com/Esteban-Montecinos/mntcode"
                   className="font-medium underline"
                   target="_blank"
                   rel="noopener noreferrer"

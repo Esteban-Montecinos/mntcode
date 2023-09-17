@@ -31,7 +31,7 @@ export default function Menu() {
             href="/"
             className="font-bold text-inherit"
           >
-            MntUI
+            MntCode
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -59,8 +59,8 @@ export default function Menu() {
             as={NextLink}
             target="_blank"
             className="p-2 rounded-full hover:bg-neutral-700"
-            href="https://github.com/Esteban-Montecinos/mntui"
-            aria-label="GitHub source MntUI"
+            href="https://github.com/Esteban-Montecinos/mntcode"
+            aria-label="GitHub source MntCode"
           >
             <IconBrandGithub />
           </Link>
