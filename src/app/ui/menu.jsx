@@ -12,7 +12,6 @@ import { IconBrandGithub } from "@tabler/icons-react";
 import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
 import { useState } from "react";
-import { Navigation } from "./navigation";
 import { components, started } from "../constants";
 import NavigationList from "./navigation-list";
 
@@ -23,7 +22,7 @@ export default function Menu() {
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent aria-label="open navigation menu MntCode">
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close navigation menu" : "open navigation menu"}
+          aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           className="lg:hidden"
         />
         <NavbarBrand aria-label="MntCode">
