@@ -5,10 +5,10 @@ import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
 import { NavbarMenuItem } from "@nextui-org/navbar";
 
-export default function NavigationList({ menuItems }) {
+export default function NavigationList({ navLinks }) {
   const pathname = usePathname();
 
-  return menuItems.map(({ name, href }) => {
+  return navLinks.map(({ name, href }) => {
     const isActive = pathname === href;
 
     return (
