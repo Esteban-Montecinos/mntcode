@@ -21,12 +21,12 @@ export default function Menu() {
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent>
+      <NavbarContent aria-label="open navigation menu MntCode">
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? "Close navigation menu" : "open navigation menu"}
           className="lg:hidden"
         />
-        <NavbarBrand>
+        <NavbarBrand aria-label="MntCode">
           <Link
             color="foreground"
             as={NextLink}
