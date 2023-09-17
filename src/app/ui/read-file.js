@@ -1,11 +1,8 @@
-import fs from "fs";
+import { readFileSync } from "fs";
 import path from "path";
 
-const root = process.cwd();
-export const GetFileBySlug = ({filename}) =>{
-
-    const source = fs.readFileSync(
-        path.join(root, filename),
-        "utf-8");
-        return source
-}
+export const GetFileBySlug = ({ filename }) => {
+  const file = path.join(process.cwd(), filename);
+  const data = readFileSync(file, "utf-8");
+  return data;
+};
