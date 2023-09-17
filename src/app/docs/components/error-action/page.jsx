@@ -2,7 +2,10 @@ import { Chip } from "@nextui-org/chip";
 import ErrorPage from "./error-page";
 import Editor from "@/app/ui/editor";
 import { IconFileTypeJs, IconFileTypeJsx } from "@tabler/icons-react";
-import { errorActionForm, errorActionPage, serverAction } from "@/app/codefiles";
+import {
+  serverAction,
+} from "@/app/constants-code";
+import { GetFileBySlug } from "@/app/ui/read-file";
 export const metadata = {
   title: "Display error server action | MntUI - Next.js",
 };
@@ -33,10 +36,10 @@ export default function page() {
       <div className="flex flex-col gap-4">
         <ErrorPage />
         <Editor icon={<IconFileTypeJsx className="w-5 h-5" />} title="page.jsx">
-          {errorActionPage}
+          <GetFileBySlug filename="src\app\docs\components\error-action\error-page.jsx" />
         </Editor>
         <Editor icon={<IconFileTypeJsx className="w-5 h-5" />} title="form.jsx">
-          {errorActionForm}
+          <GetFileBySlug filename="src\app\docs\components\error-action\form.jsx" />
         </Editor>
       </div>
     </main>
