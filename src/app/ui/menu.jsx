@@ -6,7 +6,7 @@ import {
   NavbarMenuToggle,
   NavbarMenuItem,
   NavbarMenu,
-  NavbarBrand
+  NavbarBrand,
 } from "@nextui-org/navbar";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { Link } from "@nextui-org/link";
@@ -14,6 +14,7 @@ import NextLink from "next/link";
 import { useState } from "react";
 import { Navigation } from "./navigation";
 import { components, started } from "../constants";
+import NavigationList from "./navigation-list";
 
 export default function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,9 +69,11 @@ export default function Menu() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
-        <NavbarMenuItem className="flex flex-col">
+        <NavbarMenuItem>
           <h4 className="text-lg font-semibold">Getting Started</h4>
-          <Navigation navLinks={started} />
+        </NavbarMenuItem>
+        <NavigationList navLinks={started} />
+        <NavbarMenuItem>
           <Link
             className="w-full hover:underline"
             color="foreground"
@@ -81,6 +84,8 @@ export default function Menu() {
           >
             Next.js
           </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
           <Link
             className="w-full hover:underline"
             color="foreground"
@@ -91,9 +96,11 @@ export default function Menu() {
           >
             TailwindCSS
           </Link>
-          <h4 className="text-lg font-semibold">Components</h4>
-          <Navigation navLinks={components} />
         </NavbarMenuItem>
+        <NavbarMenuItem>
+          <h4 className="text-lg font-semibold">Components</h4>
+        </NavbarMenuItem>
+        <NavigationList navLinks={components} />
       </NavbarMenu>
     </Navbar>
   );
