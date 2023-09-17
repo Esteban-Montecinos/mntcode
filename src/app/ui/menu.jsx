@@ -6,6 +6,7 @@ import {
   NavbarMenuToggle,
   NavbarMenuItem,
   NavbarMenu,
+  NavbarBrand
 } from "@nextui-org/navbar";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { Link } from "@nextui-org/link";
@@ -24,7 +25,7 @@ export default function Menu() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="lg:hidden"
         />
-        <NavbarItem>
+        <NavbarBrand>
           <Link
             color="foreground"
             as={NextLink}
@@ -33,7 +34,7 @@ export default function Menu() {
           >
             MntCode
           </Link>
-        </NavbarItem>
+        </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden gap-4 lg:flex" justify="start">
