@@ -4,3 +4,9 @@ export const started = [
 export const components = [
     {name: "Display error", href: "/docs/components/error-action"},
 ]
+
+export const serverAction = `module.exports = {
+    experimental: {
+        serverActions: true,
+    },
+}`

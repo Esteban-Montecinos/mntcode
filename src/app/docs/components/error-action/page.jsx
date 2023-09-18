@@ -2,10 +2,8 @@ import { Chip } from "@nextui-org/chip";
 import ErrorPage from "./error-page";
 import Editor from "@/app/ui/editor";
 import { IconFileTypeJs, IconFileTypeJsx } from "@tabler/icons-react";
-import {
-  serverAction,
-} from "@/app/constants-code";
 import { GetFileBySlug } from "@/app/ui/read-file";
+import { serverAction } from "@/app/constants";
 export const metadata = {
   title: "Display error server action | MntCode - Next.js",
 };
