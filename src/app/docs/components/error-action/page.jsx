@@ -5,7 +5,7 @@ import { IconFileTypeJs, IconFileTypeJsx } from "@tabler/icons-react";
 import { GetFileBySlug } from "@/app/ui/read-file";
 import { serverAction } from "@/app/constants";
 export const metadata = {
-  title: "Display error server action | MntCode - Next.js",
+  title: "Display error server action | *MntCode - Next.js",
 };
 
 export default function page() {

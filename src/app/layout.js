@@ -7,8 +7,8 @@ import Menu from "./ui/menu";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "MntCode - Next.js",
-  description: "Copy and paste components from MntCode to your project.",
+  title: "*MntCode - Next.js",
+  description: "Copy and paste components from *MntCode to your project.",
 };
 
 export default function RootLayout({ children }) {

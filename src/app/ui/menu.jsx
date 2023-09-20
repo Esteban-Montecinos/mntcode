@@ -32,7 +32,7 @@ export default function Menu() {
             href="/"
             className="font-bold text-inherit"
           >
-            MntCode
+            *MntCode
           </Link>
         </NavbarBrand>
       </NavbarContent>
